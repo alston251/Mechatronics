@@ -108,10 +108,9 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Encoder_Read_sub_VI.vi" Type="VI" URL="../Encoder_Read_sub_VI.vi"/>
+		<Item Name="Encoder_sub_VI.vi" Type="VI" URL="../Encoder_sub_VI.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="X_axis_sub_VI.vi" Type="VI" URL="../X_axis_sub_VI.vi"/>
-		<Item Name="Y Stepper Test.vi" Type="VI" URL="../../../../../../LabVIEW Data/Motor Control Lab/Y Stepper Test.vi"/>
 		<Item Name="Y_axis_sub_VI.vi" Type="VI" URL="../Y_axis_sub_VI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
