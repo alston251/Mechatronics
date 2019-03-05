@@ -11,7 +11,9 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="AcquireImage.vi" Type="VI" URL="../AcquireImage.vi"/>
+		<Item Name="Adjust_Brightness_and_Contrast.vi" Type="VI" URL="../../../Edge Location Images/Adjust_Brightness_and_Contrast.vi"/>
 		<Item Name="Adjust_Image_Quality.vi" Type="VI" URL="../Adjust_Image_Quality.vi"/>
+		<Item Name="AdjustCameraSettings.vi" Type="VI" URL="../../1 Completed Sub VIs/AdjustCameraSettings.vi"/>
 		<Item Name="CheckImageQuality.vi" Type="VI" URL="../CheckImageQuality.vi"/>
 		<Item Name="SaveandCloseImage.vi" Type="VI" URL="../SaveandCloseImage.vi"/>
 		<Item Name="Test_Save_Image.vi" Type="VI" URL="../Test_Save_Image.vi"/>
