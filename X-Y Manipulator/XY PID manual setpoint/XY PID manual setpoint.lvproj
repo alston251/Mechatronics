@@ -23,6 +23,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../Calculate Velocity and Acceleration.vi"/>
 		<Item Name="Save Encoder Data From MyRio_sub_VI.vi" Type="VI" URL="../Save Encoder Data From MyRio_sub_VI.vi"/>
+		<Item Name="Y Axis Acceleration Conversion sub_VI.vi" Type="VI" URL="../Y Axis Acceleration Conversion sub_VI.vi"/>
 		<Item Name="Y Axis Speed Conversion sub_VI.vi" Type="VI" URL="../Y Axis Speed Conversion sub_VI.vi"/>
 		<Item Name="Y Axis Speed Conversion.vi" Type="VI" URL="../Y Axis Speed Conversion.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -253,10 +254,13 @@ AddOutputFilter chunkFilter
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
 			<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../Calculate Velocity and Acceleration.vi"/>
+			<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
+			<Item Name="Motion Type Def.ctl" Type="VI" URL="../Motion Type Def.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>
+			<Item Name="Y Axis Acceleration Conversion sub_VI.vi" Type="VI" URL="../Y Axis Acceleration Conversion sub_VI.vi"/>
 			<Item Name="Y Axis Speed Conversion sub_VI.vi" Type="VI" URL="../Y Axis Speed Conversion sub_VI.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
