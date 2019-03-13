@@ -21,7 +21,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../Calculate Velocity and Acceleration.vi"/>
+		<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../../X-Y Manipulator/XY PID manual setpoint/Calculate Velocity and Acceleration.vi"/>
 		<Item Name="Save Encoder Data From MyRio_sub_VI.vi" Type="VI" URL="../Save Encoder Data From MyRio_sub_VI.vi"/>
 		<Item Name="Y Axis Speed Conversion sub_VI.vi" Type="VI" URL="../Y Axis Speed Conversion sub_VI.vi"/>
 		<Item Name="Y Axis Speed Conversion.vi" Type="VI" URL="../Y Axis Speed Conversion.vi"/>
@@ -113,11 +113,11 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="2D Array Custom Control Data Type.ctl" Type="VI" URL="../2D Array Custom Control Data Type.ctl"/>
+		<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../../X-Y Manipulator/XY PID manual setpoint/Calculate Velocity and Acceleration.vi"/>
 		<Item Name="Compile Datalog Array sub_VI.vi" Type="VI" URL="../Compile Datalog Array sub_VI.vi"/>
 		<Item Name="Compile Datalog Array.vi" Type="VI" URL="../Compile Datalog Array.vi"/>
 		<Item Name="Coords Input Cluster.ctl" Type="VI" URL="../Coords Input Cluster.ctl"/>
-		<Item Name="Encoder Cluster.ctl" Type="VI" URL="../Encoder Cluster.ctl"/>
-		<Item Name="Encoder_sub_VI.vi" Type="VI" URL="../Encoder_sub_VI.vi"/>
+		<Item Name="Encoder_sub_VI.vi" Type="VI" URL="../../X-Y Manipulator/XY PID manual setpoint/Encoder_sub_VI.vi"/>
 		<Item Name="Go Home State type def.ctl" Type="VI" URL="../Go Home State type def.ctl"/>
 		<Item Name="Go Home.vi" Type="VI" URL="../Go Home.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
@@ -138,7 +138,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Calculate TOP (Phase Correct Mode).vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate TOP (Phase Correct Mode).vi"/>
 				<Item Name="Callback VI Ref.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Callback VI Ref.ctl"/>
 				<Item Name="CANCloseInterface.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANCloseInterface.vi"/>
-				<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
 				<Item Name="CANStop.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStop.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Clock Calculation Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Clock Calculation Parameters.ctl"/>
@@ -253,13 +252,10 @@ AddOutputFilter chunkFilter
 				<Item Name="Validate Channels.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Validate Channels.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
-			<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../Calculate Velocity and Acceleration.vi"/>
+			<Item Name="Encoder Cluster.ctl" Type="VI" URL="../../X-Y Manipulator/XY PID manual setpoint/Encoder Cluster.ctl"/>
 			<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 			<Item Name="Motion Type Def.ctl" Type="VI" URL="../Motion Type Def.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>
