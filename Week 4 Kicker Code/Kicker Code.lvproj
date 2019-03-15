@@ -109,10 +109,14 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="Motor conditions_subVI.vi" Type="VI" URL="../Motor conditions_subVI.vi"/>
 		<Item Name="Potentiometer Read.vi" Type="VI" URL="../Potentiometer Read.vi"/>
 		<Item Name="Potentiometer Read_subVI.vi" Type="VI" URL="../Potentiometer Read_subVI.vi"/>
+		<Item Name="Reset Block (0-3).vi" Type="VI" URL="../Reset Block (0-3).vi"/>
 		<Item Name="Solenoid Control.vi" Type="VI" URL="../Solenoid Control.vi"/>
 		<Item Name="Solenoid Control_subVI.vi" Type="VI" URL="../Solenoid Control_subVI.vi"/>
+		<Item Name="Theta Drive_One step on.vi" Type="VI" URL="../Theta Drive_One step on.vi"/>
+		<Item Name="Theta Drive_Two step on.vi" Type="VI" URL="../Theta Drive_Two step on.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -267,6 +271,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="subFilter.vi" Type="VI" URL="/&lt;vilib&gt;/express/express analysis/FilterBlock.llb/subFilter.vi"/>
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="System FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/System/typedefs/System FPGA Reference.ctl"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
