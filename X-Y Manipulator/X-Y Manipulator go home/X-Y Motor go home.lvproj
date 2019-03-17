@@ -121,6 +121,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../Calculate Velocity and Acceleration.vi"/>
 		<Item Name="Encoder_sub_VI.vi" Type="VI" URL="../Encoder_sub_VI.vi"/>
 		<Item Name="Go Home State type def.ctl" Type="VI" URL="../Go Home State type def.ctl"/>
+		<Item Name="Go Home Sub_VI.vi" Type="VI" URL="../../XY PID manual setpoint/Go Home Sub_VI.vi"/>
 		<Item Name="Go Home.vi" Type="VI" URL="../Go Home.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Motor Status Enum.ctl" Type="VI" URL="../Motor Status Enum.ctl"/>
@@ -141,7 +142,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Calculate TOP (Phase Correct Mode).vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate TOP (Phase Correct Mode).vi"/>
 				<Item Name="Callback VI Ref.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Callback VI Ref.ctl"/>
 				<Item Name="CANCloseInterface.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANCloseInterface.vi"/>
-				<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
 				<Item Name="CANStop.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStop.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Clock Calculation Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Clock Calculation Parameters.ctl"/>
@@ -254,9 +254,6 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="Control 1.ctl" Type="VI" URL="../../X-Y Manipulator open loop/Control 1.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
