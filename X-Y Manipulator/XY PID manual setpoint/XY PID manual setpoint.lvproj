@@ -117,6 +117,8 @@ AddOutputFilter chunkFilter
 		<Item Name="Compile Datalog Array sub_VI.vi" Type="VI" URL="../Compile Datalog Array sub_VI.vi"/>
 		<Item Name="Compile Datalog Array.vi" Type="VI" URL="../Compile Datalog Array.vi"/>
 		<Item Name="Coords Input Cluster.ctl" Type="VI" URL="../Coords Input Cluster.ctl"/>
+		<Item Name="Encoder Cluster.ctl" Type="VI" URL="../Encoder Cluster.ctl"/>
+		<Item Name="Encoder_sub_VI.vi" Type="VI" URL="../Encoder_sub_VI.vi"/>
 		<Item Name="Go Home State type def.ctl" Type="VI" URL="../Go Home State type def.ctl"/>
 		<Item Name="Go Home Sub_VI.vi" Type="VI" URL="../Go Home Sub_VI.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
@@ -253,9 +255,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Validate Channels.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Validate Channels.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
-			<Item Name="Encoder Cluster.ctl" Type="VI" URL="../../X-Y Manipulator/XY PID manual setpoint/Encoder Cluster.ctl"/>
-			<Item Name="Encoder Cluster.ctl" Type="VI" URL="../Encoder Cluster.ctl"/>
-			<Item Name="Encoder_sub_VI.vi" Type="VI" URL="../Encoder_sub_VI.vi"/>
 			<Item Name="Motion Type Def.ctl" Type="VI" URL="../Motion Type Def.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
