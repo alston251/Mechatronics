@@ -10,8 +10,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Initial Path Plot Sub_VI.vi" Type="VI" URL="../Initial Path Plot Sub_VI.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="Motion Chart Overlay test.vi" Type="VI" URL="../Motion Chart Overlay test.vi"/>
 		<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
+		<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../Motion Plot sub_VI.vi"/>
+		<Item Name="Motion Plot.vi" Type="VI" URL="../Motion Plot.vi"/>
 		<Item Name="Motion Type Def.ctl" Type="VI" URL="../Motion Type Def.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
