@@ -13,12 +13,15 @@
 		<Item Name="AcquireImage.vi" Type="VI" URL="../AcquireImage.vi"/>
 		<Item Name="AdjustCameraSettings.vi" Type="VI" URL="../AdjustCameraSettings.vi"/>
 		<Item Name="ApplyScaleData.vi" Type="VI" URL="../ApplyScaleData.vi"/>
+		<Item Name="CalculatePixeltomm.vi" Type="VI" URL="../CalculatePixeltomm.vi"/>
 		<Item Name="Calibrate.vi" Type="VI" URL="../Calibrate.vi"/>
 		<Item Name="Calibration_Main.vi" Type="VI" URL="../Calibration_Main.vi"/>
 		<Item Name="CheckImageQuality.vi" Type="VI" URL="../CheckImageQuality.vi"/>
+		<Item Name="ConvertBetweenXYandPixel.vi" Type="VI" URL="../ConvertBetweenXYandPixel.vi"/>
 		<Item Name="ConvertEdgesToLines.vi" Type="VI" URL="../ConvertEdgesToLines.vi"/>
 		<Item Name="CreateCoordinateSystem.vi" Type="VI" URL="../CreateCoordinateSystem.vi"/>
 		<Item Name="CreateHistogramArray.vi" Type="VI" URL="../CreateHistogramArray.vi"/>
+		<Item Name="DrawTrajectory.vi" Type="VI" URL="../DrawTrajectory.vi"/>
 		<Item Name="FeatureLocation.vi" Type="VI" URL="../FeatureLocation.vi"/>
 		<Item Name="FindCircles.vi" Type="VI" URL="../FindCircles.vi"/>
 		<Item Name="FindHorizontalEdges.vi" Type="VI" URL="../FindHorizontalEdges.vi"/>
@@ -35,6 +38,7 @@
 				<Item Name="Calibration Reference Points.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Calibration.llb/Calibration Reference Points.ctl"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -67,6 +71,7 @@
 				<Item Name="IMAQ GetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageSize"/>
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
 				<Item Name="IMAQ Match Range Setting.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Pattern Matching.llb/IMAQ Match Range Setting.ctl"/>
+				<Item Name="IMAQ Overlay Line" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Line"/>
 				<Item Name="IMAQ Point" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Point"/>
 				<Item Name="IMAQ Read Image And Vision Info 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files1.llb/IMAQ Read Image And Vision Info 2"/>
 				<Item Name="IMAQ Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rectangle"/>
