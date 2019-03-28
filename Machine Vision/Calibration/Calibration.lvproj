@@ -13,8 +13,10 @@
 		<Item Name="AcquireImage.vi" Type="VI" URL="../AcquireImage.vi"/>
 		<Item Name="AdjustCameraSettings.vi" Type="VI" URL="../AdjustCameraSettings.vi"/>
 		<Item Name="ApplyScaleData.vi" Type="VI" URL="../ApplyScaleData.vi"/>
+		<Item Name="Calibrate.vi" Type="VI" URL="../Calibrate.vi"/>
 		<Item Name="Calibration_Main.vi" Type="VI" URL="../Calibration_Main.vi"/>
 		<Item Name="CheckImageQuality.vi" Type="VI" URL="../CheckImageQuality.vi"/>
+		<Item Name="ConvertEdgesToLines.vi" Type="VI" URL="../ConvertEdgesToLines.vi"/>
 		<Item Name="CreateCoordinateSystem.vi" Type="VI" URL="../CreateCoordinateSystem.vi"/>
 		<Item Name="CreateHistogramArray.vi" Type="VI" URL="../CreateHistogramArray.vi"/>
 		<Item Name="FeatureLocation.vi" Type="VI" URL="../FeatureLocation.vi"/>
@@ -24,9 +26,9 @@
 		<Item Name="FindVerticalEdges.vi" Type="VI" URL="../FindVerticalEdges.vi"/>
 		<Item Name="GetCameraSettings.vi" Type="VI" URL="../GetCameraSettings.vi"/>
 		<Item Name="GetScaleData.vi" Type="VI" URL="../GetScaleData.vi"/>
-		<Item Name="Kick_Main.vi" Type="VI" URL="../Kick_Main.vi"/>
 		<Item Name="LinearFilter.vi" Type="VI" URL="../LinearFilter.vi"/>
 		<Item Name="Thresholding.vi" Type="VI" URL="../Thresholding.vi"/>
+		<Item Name="Trajectory.vi" Type="VI" URL="../Trajectory.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -67,7 +69,6 @@
 				<Item Name="IMAQ Match Range Setting.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Pattern Matching.llb/IMAQ Match Range Setting.ctl"/>
 				<Item Name="IMAQ Point" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Point"/>
 				<Item Name="IMAQ Read Image And Vision Info 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files1.llb/IMAQ Read Image And Vision Info 2"/>
-				<Item Name="IMAQ ReadFile 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ ReadFile 2"/>
 				<Item Name="IMAQ Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rectangle"/>
 				<Item Name="IMAQ Rounding Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rounding Mode.ctl"/>
 				<Item Name="IMAQ Write BMP File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write BMP File 2"/>
