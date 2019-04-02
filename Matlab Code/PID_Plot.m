@@ -1,8 +1,8 @@
 % read in test data
 % xlsread(filename,tab#,cells)
-file = 'X-Axis PID Data/1-4-2019 Autotune.xlsx';
+file = 'Y-Axis PID Data/Y 2-4-2019 Filtered.xlsx';
 
-xls_tab = 3;
+xls_tab = 13;
 time = xlsread(file,xls_tab,'A2:A2000');
 setPt = xlsread(file,xls_tab,'B2:B2000');
 speed_var = xlsread(file,xls_tab,'C2:C2000');
@@ -18,9 +18,9 @@ a = 1;
 var_avg = filter(b,a,speed_var);
 filter_delay = (length(b)-1)/2;
 
-setPt_idx = find(setPt == 20, 1);
+setPt_idx = find(setPt == 10, 1);
 setPt_time = time(setPt_idx);
-reach_idx = find(var_avg > 20, 1);
+reach_idx = find(var_avg > 10, 1);
 reach_time = time(reach_idx);
 [overshoot, overshoot_idx] = max(var_avg);
 overshoot_time = time(overshoot_idx);
@@ -35,6 +35,14 @@ fprintf('filename: %s, tab: %d, window size = %d\n', file, xls_tab, windowSize);
 fprintf('Kc = %f, Ti = %f, Td = %f\n', Kc, Ti, Td);
 fprintf('SP time: %fs, reach time: %fs, overshoot: %fm/s, overshoot time: %fs\n', setPt_time, reach_time, overshoot, overshoot_time);
 fprintf('error_avg: %fmm/s, error_std: %fmm/s, error_span: %fs\n', reach_error_avg, reach_error_std, reach_error_span);
+fprintf('\n');
+
+fprintf('%d,,%f,%f,%f,,%f,%f,,%f,,%f,%f,%f,%f\n', xls_tab, Kc, Ti, Td, setPt_time, reach_time, overshoot,overshoot_time, reach_error_avg, reach_error_std, reach_error_span);
+%{
+fprintf('%f,%f\n', setPt_time, reach_time);
+fprintf('%f\n', overshoot);
+fprintf('%f,%f,%f,%f\n', overshoot_time, reach_error_avg, reach_error_std, reach_error_span);
+%}
 fprintf('\n');
 
 clf
