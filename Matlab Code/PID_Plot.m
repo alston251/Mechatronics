@@ -1,37 +1,80 @@
 % read in test data
 % xlsread(filename,tab#,cells)
-xls_tab = 20
-time = xlsread('PID Testing',xls_tab,'A2:A2000');
-setPt = xlsread('PID Testing',xls_tab,'B2:B2000');
-speed_var = xlsread('PID Testing',xls_tab,'C2:C2000');
+file = 'Y-Axis PID Data/Y 2-4-2019 Filtered.xlsx';
 
-% offset for initial velocity and initial time
-setPt_init = 0;
-time_init = 0;
+xls_tab = 13;
+time = xlsread(file,xls_tab,'A2:A2000');
+setPt = xlsread(file,xls_tab,'B2:B2000');
+speed_var = xlsread(file,xls_tab,'C2:C2000');
 
-% plot time vs setpoint
-figure(1)
-plot(time - time_init,setPt - setPt_init);
-hold on
-% plot time vs speed
-plot(time - time_init, speed_var - setPt_init)
+Kc = xlsread(file,xls_tab,'E2');
+Ti = xlsread(file,xls_tab,'F2');
+Td = xlsread(file,xls_tab,'G2');
 
 % apply moving average to data
-windowSize = 20
+windowSize = 20;
 b = (1/windowSize)*ones(1,windowSize);
 a = 1;
-var_avg = filter(b,a,speed_var - setPt_init);
+var_avg = filter(b,a,speed_var);
 filter_delay = (length(b)-1)/2;
 
-plot(time - time_init, var_avg)
+setPt_idx = find(setPt == 10, 1);
+setPt_time = time(setPt_idx);
+reach_idx = find(var_avg > 10, 1);
+reach_time = time(reach_idx);
+[overshoot, overshoot_idx] = max(var_avg);
+overshoot_time = time(overshoot_idx);
+
+% error of avg PV compared to SP after SP has been reached
+error = abs(var_avg - setPt);
+reach_error_avg = mean(error(reach_idx:end));
+reach_error_std = std(error(reach_idx:end));
+reach_error_span = max(time) - reach_time;
+
+fprintf('filename: %s, tab: %d, window size = %d\n', file, xls_tab, windowSize);
+fprintf('Kc = %f, Ti = %f, Td = %f\n', Kc, Ti, Td);
+fprintf('SP time: %fs, reach time: %fs, overshoot: %fm/s, overshoot time: %fs\n', setPt_time, reach_time, overshoot, overshoot_time);
+fprintf('error_avg: %fmm/s, error_std: %fmm/s, error_span: %fs\n', reach_error_avg, reach_error_std, reach_error_span);
+fprintf('\n');
+
+fprintf('%d,,%f,%f,%f,,%f,%f,,%f,,%f,%f,%f,%f\n', xls_tab, Kc, Ti, Td, setPt_time, reach_time, overshoot,overshoot_time, reach_error_avg, reach_error_std, reach_error_span);
+%{
+fprintf('%f,%f\n', setPt_time, reach_time);
+fprintf('%f\n', overshoot);
+fprintf('%f,%f,%f,%f\n', overshoot_time, reach_error_avg, reach_error_std, reach_error_span);
+%}
+fprintf('\n');
+
+clf
+
+figure(1)
+hold on
+% plot time vs setpoint
+plot(time,setPt, '-b')
+% plot time vs speed
+plot(time, speed_var, '-r')
+
+plot(time, var_avg, '-k')
 legend('Set Pt','Var','Avg Var','location','best')
 xlabel('Time (s)')
 ylabel('Speed (m/s)')
 hold off
 grid
 
-% plot slope vs time
+% plot time vs speed filtered PV and SP only
 figure(2)
+hold on
+plot(time,setPt, '-b')
+plot(time, var_avg, '-k')
+legend('Set Pt','PV Avg','location','best')
+xlabel('Time (s)')
+ylabel('Speed (m/s)')
+hold off
+grid
+
+%{
+% plot slope vs time
+figure(3)
 slope = diff(var_avg - setPt_init)./diff(time - filter_delay - time_init);
 %slope = gradient(var_avg - setPt_init, time - filter_delay);
 % apply moving average to slope
@@ -58,16 +101,7 @@ pCoeff = polyfit(time(idx1:idx2),var_avg(idx1:idx2),1)      % grad and y-cept @ 
 tan_x = linspace(t1 - 1,t2 + 1,200);                 % x points around region of inflection point
 tan_y = pCoeff(1) .* tan_x + pCoeff(2);                         % y points of tangent line
 
-
-% h = mean(diff(time));
-% h = diff(time);
-% dy = gradient(var_avg, h);                                      % Numerical Derivative
-% [~,idx] = max(dy);                                              % Index Of Maximum
-% b = [time([idx-1,idx+1]) ones(2,1) ] \ var_avg([idx-1,idx+1]);   % Regression Line Around Maximum Derivative
-% tv = [-b(2)/b(1); (1-b(2))/b(1)];                               % Independent Variable Range For Tangent Line Plot
-% f = [(time) ones(size(time))] * b;                              % Calculate Tangent Line
-
-figure(3)
+figure(4)
 plot(time, var_avg)
 hold on
 plot(tan_x,tan_y, '-r')                               % Tangent Line
@@ -78,3 +112,4 @@ xlabel('Time (s)')
 ylabel('Speed (m/s)')
 hold off
 grid
+%}
