@@ -23,6 +23,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../Calculate Velocity and Acceleration.vi"/>
 		<Item Name="Initial Path Plot Sub_VI.vi" Type="VI" URL="../Initial Path Plot Sub_VI.vi"/>
+		<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 		<Item Name="Save Encoder Data From MyRio_sub_VI.vi" Type="VI" URL="../Save Encoder Data From MyRio_sub_VI.vi"/>
 		<Item Name="Y Axis Speed Conversion sub_VI.vi" Type="VI" URL="../Y Axis Speed Conversion sub_VI.vi"/>
 		<Item Name="Y Axis Speed Conversion.vi" Type="VI" URL="../Y Axis Speed Conversion.vi"/>
@@ -30,7 +31,6 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
-			<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 			<Item Name="Motion Type Def.ctl" Type="VI" URL="../Motion Type Def.ctl"/>
 			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>
 		</Item>
@@ -127,7 +127,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Go Home Sub_VI.vi" Type="VI" URL="../Go Home Sub_VI.vi"/>
 		<Item Name="Initial Path Plot Sub_VI.vi" Type="VI" URL="../Initial Path Plot Sub_VI.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 		<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../../Test Code Snippets/Trapezodial Motion Planning/Motion Plot sub_VI.vi"/>
 		<Item Name="Motor Status Enum.ctl" Type="VI" URL="../Motor Status Enum.ctl"/>
 		<Item Name="PID Autotune X-Axis.vi" Type="VI" URL="../PID Autotune X-Axis.vi"/>
@@ -151,6 +150,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Calculate TOP (Phase Correct Mode).vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate TOP (Phase Correct Mode).vi"/>
 				<Item Name="Callback VI Ref.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Callback VI Ref.ctl"/>
 				<Item Name="CANCloseInterface.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANCloseInterface.vi"/>
+				<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
 				<Item Name="CANStop.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStop.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Clock Calculation Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Clock Calculation Parameters.ctl"/>
@@ -273,8 +273,12 @@ AddOutputFilter chunkFilter
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 			<Item Name="Motion Type Def.ctl" Type="VI" URL="../Motion Type Def.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>
