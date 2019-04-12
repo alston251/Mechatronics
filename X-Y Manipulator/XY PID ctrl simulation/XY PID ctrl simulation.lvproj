@@ -291,8 +291,8 @@ AddOutputFilter chunkFilter
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>
 			<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../Motion Plot sub_VI.vi"/>
+			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
