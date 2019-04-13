@@ -2,7 +2,7 @@
 <Project Type="Project" LVVersion="17008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{06306351-B0A9-471C-B7D7-1B687C93B844}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/Encoder Data</Property>
+	<Property Name="varPersistentID:{526FD075-2530-4864-9F82-3DD261CCC4FB}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/Motion Data</Property>
 	<Property Name="varPersistentID:{DB6CB4F5-850A-43A7-AF7C-C5EE5888DE00}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/XY Datalog</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -119,7 +119,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="2D Array Custom Control Data Type.ctl" Type="VI" URL="../2D Array Custom Control Data Type.ctl"/>
 		<Item Name="2D String Array Type.ctl" Type="VI" URL="../2D String Array Type.ctl"/>
-		<Item Name="bump_test.vi" Type="VI" URL="../../X-Y Manipulator open loop/bump_test.vi"/>
 		<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../Calculate Velocity and Acceleration.vi"/>
 		<Item Name="Compile Datalog Array sub_VI.vi" Type="VI" URL="../Compile Datalog Array sub_VI.vi"/>
 		<Item Name="Compile Datalog Array.vi" Type="VI" URL="../Compile Datalog Array.vi"/>
