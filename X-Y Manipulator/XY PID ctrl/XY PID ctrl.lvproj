@@ -273,8 +273,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Validate Channels.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Validate Channels.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
-			<Item Name="Encoder Cluster.ctl" Type="VI" URL="../../XY PID ctrl simulation/Encoder Cluster.ctl"/>
-			<Item Name="Encoder_sub_VI.vi" Type="VI" URL="../../XY PID ctrl simulation/Encoder_sub_VI.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 			<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../Motion Plot sub_VI.vi"/>
@@ -283,8 +281,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>
-			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../../XY PID ctrl simulation/Write_file_sub_VI.vi"/>
-			<Item Name="X_axis_sub_VI.vi" Type="VI" URL="../../XY PID ctrl simulation/X_axis_sub_VI.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
