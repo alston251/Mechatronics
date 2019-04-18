@@ -131,7 +131,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Motor Status Enum.ctl" Type="VI" URL="../Motor Status Enum.ctl"/>
 		<Item Name="PID Test.vi" Type="VI" URL="../PID Test.vi"/>
 		<Item Name="Shared Variables.lvlib" Type="Library" URL="../Shared Variables.lvlib"/>
-		<Item Name="Stepper L298 Drive.vi" Type="VI" URL="../../Kicker VIs/Stepper L298 Drive.vi"/>
 		<Item Name="Stepper L298 Drive.vi" Type="VI" URL="../../../Week 4 Kicker Code/Stepper L298 Drive.vi"/>
 		<Item Name="X Axis Motor Cluster.ctl" Type="VI" URL="../X Axis Motor Cluster.ctl"/>
 		<Item Name="X_axis_sub_VI.vi" Type="VI" URL="../X_axis_sub_VI.vi"/>
