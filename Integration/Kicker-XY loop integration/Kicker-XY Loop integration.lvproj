@@ -3,6 +3,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="varPersistentID:{06306351-B0A9-471C-B7D7-1B687C93B844}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/Encoder Data</Property>
+	<Property Name="varPersistentID:{ED11FAAE-065F-4692-9B94-279A619B96B6}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/XY Datalog</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -126,6 +127,7 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
+			<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../Motion Plot sub_VI.vi"/>
 			<Item Name="Motion Type Def.ctl" Type="VI" URL="../Motion Type Def.ctl"/>
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -136,7 +138,6 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Vision Global Var..vi" Type="VI" URL="../Vision Global Var..vi"/>
 			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
@@ -234,13 +235,13 @@ AddOutputFilter chunkFilter
 		<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 		<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../Motion Plot sub_VI.vi"/>
 		<Item Name="Motor Status Enum.ctl" Type="VI" URL="../Motor Status Enum.ctl"/>
+		<Item Name="PC To Rio Cluster.ctl" Type="VI" URL="../PC To Rio Cluster.ctl"/>
 		<Item Name="PID Test.vi" Type="VI" URL="../PID Test.vi"/>
 		<Item Name="Shared Variables.lvlib" Type="Library" URL="../Shared Variables.lvlib"/>
 		<Item Name="Stepper L298 Drive.vi" Type="VI" URL="../../../Week 4 Kicker Code/Stepper L298 Drive.vi"/>
 		<Item Name="Vision Global Var..vi" Type="VI" URL="../Vision Global Var..vi"/>
 		<Item Name="X Axis Motor Cluster.ctl" Type="VI" URL="../X Axis Motor Cluster.ctl"/>
 		<Item Name="X_axis_sub_VI.vi" Type="VI" URL="../X_axis_sub_VI.vi"/>
-		<Item Name="XY Sub VI.vi" Type="VI" URL="../XY Sub VI.vi"/>
 		<Item Name="Y Axis Motor Cluster.ctl" Type="VI" URL="../Y Axis Motor Cluster.ctl"/>
 		<Item Name="Y Axis Speed Conversion sub_VI.vi" Type="VI" URL="../Y Axis Speed Conversion sub_VI.vi"/>
 		<Item Name="Y_axis_sub_VI.vi" Type="VI" URL="../Y_axis_sub_VI.vi"/>
@@ -260,7 +261,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Calculate TOP (Phase Correct Mode).vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate TOP (Phase Correct Mode).vi"/>
 				<Item Name="Callback VI Ref.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Callback VI Ref.ctl"/>
 				<Item Name="CANCloseInterface.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANCloseInterface.vi"/>
-				<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
 				<Item Name="CANStop.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStop.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Clock Calculation Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Clock Calculation Parameters.ctl"/>
@@ -352,6 +352,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Named Mutex.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Named Mutex.ctl"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="Parse Scaling Constant Table.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Parse Scaling Constant Table.vi"/>
 				<Item Name="PWM Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/PWM Channels Enum.ctl"/>
 				<Item Name="PWM Channels FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/PWM Channels FPGA Reference.ctl"/>
@@ -400,13 +401,11 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Pot.Voltage to Angle_subVI.vi" Type="VI" URL="../../Kicker VIs/Pot.Voltage to Angle_subVI.vi"/>
-			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="Solenoid Control Sub_VI.vi" Type="VI" URL="../../Kicker VIs/Solenoid Control Sub_VI.vi"/>
 			<Item Name="Theta Drive_Two step on.vi" Type="VI" URL="../../Kicker VIs/Theta Drive_Two step on.vi"/>
 			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>
-			<Item Name="Y Axis Acceleration Conversion sub_VI.vi" Type="VI" URL="../Y Axis Acceleration Conversion sub_VI.vi"/>
+			<Item Name="XY Cluster.ctl" Type="VI" URL="../XY Cluster.ctl"/>
+			<Item Name="XY Sub_VI.vi" Type="VI" URL="../XY Sub_VI.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
