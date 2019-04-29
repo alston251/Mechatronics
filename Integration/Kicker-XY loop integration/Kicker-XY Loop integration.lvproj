@@ -393,7 +393,6 @@ AddOutputFilter chunkFilter
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Energy to Pull-back_linear_subVI.vi" Type="VI" URL="../../Kicker VIs/Energy to Pull-back_linear_subVI.vi"/>
-			<Item Name="Initial Path Plot Sub_VI.vi" Type="VI" URL="../Initial Path Plot Sub_VI.vi"/>
 			<Item Name="Kicker Pull Back Routine.vi" Type="VI" URL="../../Kicker VIs/Kicker Pull Back Routine.vi"/>
 			<Item Name="Motion Type Def.ctl" Type="VI" URL="../Motion Type Def.ctl"/>
 			<Item Name="Motor conditions_subVI.vi" Type="VI" URL="../../Kicker VIs/Motor conditions_subVI.vi"/>
