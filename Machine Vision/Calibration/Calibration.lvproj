@@ -1,5 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="17008000">
+	<Property Name="varPersistentID:{2B12DAEA-4B94-45F9-AA01-16EBE19EE27F}" Type="Ref">/My Computer/CameraSettings.lvlib/Threshold</Property>
+	<Property Name="varPersistentID:{4201B108-6769-4595-BD55-5A2B06A3A121}" Type="Ref">/My Computer/CameraSettings.lvlib/Brightness</Property>
+	<Property Name="varPersistentID:{45871507-2033-4EA7-B60B-46F7446FD21C}" Type="Ref">/My Computer/HomeCoords.lvlib/HomeXPixel</Property>
+	<Property Name="varPersistentID:{7840E60B-EB42-4494-9C3C-C2888FC211B6}" Type="Ref">/My Computer/HomeCoords.lvlib/HomeYPixel</Property>
+	<Property Name="varPersistentID:{85E8B636-87A2-46B8-9649-373713F42560}" Type="Ref">/My Computer/CameraSettings.lvlib/Contrast</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -16,7 +21,10 @@
 		<Item Name="CalculatePixeltomm.vi" Type="VI" URL="../CalculatePixeltomm.vi"/>
 		<Item Name="Calibrate.vi" Type="VI" URL="../Calibrate.vi"/>
 		<Item Name="Calibration_Main.vi" Type="VI" URL="../Calibration_Main.vi"/>
+		<Item Name="CameraSettings.lvlib" Type="Library" URL="../CameraSettings.lvlib"/>
 		<Item Name="CheckImageQuality.vi" Type="VI" URL="../CheckImageQuality.vi"/>
+		<Item Name="CheckReferenceValue.vi" Type="VI" URL="../CheckReferenceValue.vi"/>
+		<Item Name="CheckShotSuccess.vi" Type="VI" URL="../CheckShotSuccess.vi"/>
 		<Item Name="ConvertBetweenXYandPixel.vi" Type="VI" URL="../ConvertBetweenXYandPixel.vi"/>
 		<Item Name="ConvertEdgesToLines.vi" Type="VI" URL="../ConvertEdgesToLines.vi"/>
 		<Item Name="CreateCoordinateSystem.vi" Type="VI" URL="../CreateCoordinateSystem.vi"/>
@@ -29,7 +37,9 @@
 		<Item Name="FindVerticalEdges.vi" Type="VI" URL="../FindVerticalEdges.vi"/>
 		<Item Name="GetCameraSettings.vi" Type="VI" URL="../GetCameraSettings.vi"/>
 		<Item Name="GetScaleData.vi" Type="VI" URL="../GetScaleData.vi"/>
+		<Item Name="HomeCoords.lvlib" Type="Library" URL="../HomeCoords.lvlib"/>
 		<Item Name="LinearFilter.vi" Type="VI" URL="../LinearFilter.vi"/>
+		<Item Name="RunTrajectoryCode.vi" Type="VI" URL="../RunTrajectoryCode.vi"/>
 		<Item Name="Thresholding.vi" Type="VI" URL="../Thresholding.vi"/>
 		<Item Name="Trajectory.vi" Type="VI" URL="../Trajectory.vi"/>
 		<Item Name="TrajectoryTest.vi" Type="VI" URL="../TrajectoryTest.vi"/>
@@ -65,6 +75,7 @@
 				<Item Name="IMAQ Convert To Curve Parameters Internal" Type="VI" URL="/&lt;vilib&gt;/vision/Pattern Matching.llb/IMAQ Convert To Curve Parameters Internal"/>
 				<Item Name="IMAQ Convert To Shape Detection Match Options Internal" Type="VI" URL="/&lt;vilib&gt;/vision/Shape Detection.llb/IMAQ Convert To Shape Detection Match Options Internal"/>
 				<Item Name="IMAQ Coordinate System" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Coordinate System"/>
+				<Item Name="IMAQ Copy" Type="VI" URL="/&lt;vilib&gt;/vision/Management.llb/IMAQ Copy"/>
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
 				<Item Name="IMAQ Curve Parameters Internal.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Pattern Matching.llb/IMAQ Curve Parameters Internal.ctl"/>
 				<Item Name="IMAQ Curve Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Pattern Matching.llb/IMAQ Curve Parameters.ctl"/>
