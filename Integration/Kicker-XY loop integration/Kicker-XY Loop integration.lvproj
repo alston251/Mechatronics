@@ -9,6 +9,7 @@
 	<Property Name="varPersistentID:{1E4E25A3-F3C1-446C-94DF-6ADF9F0C530E}" Type="Ref">/My Computer/HomeCoords.lvlib/HomeYPixel</Property>
 	<Property Name="varPersistentID:{1F82104C-A21E-440A-81AA-F78BD503A728}" Type="Ref">/My Computer/CameraSettings.lvlib/Brightness</Property>
 	<Property Name="varPersistentID:{2DD33C13-02DA-43C0-9713-9827405D7859}" Type="Ref">/My Computer/CameraSettings.lvlib/Threshold</Property>
+	<Property Name="varPersistentID:{A6006497-756E-4460-BF9E-B787C75DC295}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/XY Telemetry</Property>
 	<Property Name="varPersistentID:{ED11FAAE-065F-4692-9B94-279A619B96B6}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/XY Datalog</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -60,6 +61,7 @@
 		<Item Name="Thresholding.vi" Type="VI" URL="../../../Machine Vision/Calibration/Thresholding.vi"/>
 		<Item Name="Trajectory.vi" Type="VI" URL="../../../Machine Vision/Calibration/Trajectory.vi"/>
 		<Item Name="TrajectoryTest.vi" Type="VI" URL="../../../Machine Vision/Calibration/TrajectoryTest.vi"/>
+		<Item Name="XY Telemetry Output Test.vi" Type="VI" URL="../XY Telemetry Output Test.vi"/>
 		<Item Name="Y Axis Speed Conversion sub_VI.vi" Type="VI" URL="../Y Axis Speed Conversion sub_VI.vi"/>
 		<Item Name="Y Axis Speed Conversion.vi" Type="VI" URL="../Y Axis Speed Conversion.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -255,6 +257,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Vision Global Var..vi" Type="VI" URL="../Vision Global Var..vi"/>
 		<Item Name="X Axis Motor Cluster.ctl" Type="VI" URL="../X Axis Motor Cluster.ctl"/>
 		<Item Name="X_axis_sub_VI.vi" Type="VI" URL="../X_axis_sub_VI.vi"/>
+		<Item Name="XY Telemetry.ctl" Type="VI" URL="../XY Telemetry.ctl"/>
 		<Item Name="Y Axis Motor Cluster.ctl" Type="VI" URL="../Y Axis Motor Cluster.ctl"/>
 		<Item Name="Y Axis Speed Conversion sub_VI.vi" Type="VI" URL="../Y Axis Speed Conversion sub_VI.vi"/>
 		<Item Name="Y_axis_sub_VI.vi" Type="VI" URL="../Y_axis_sub_VI.vi"/>
@@ -274,7 +277,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Calculate TOP (Phase Correct Mode).vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate TOP (Phase Correct Mode).vi"/>
 				<Item Name="Callback VI Ref.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Callback VI Ref.ctl"/>
 				<Item Name="CANCloseInterface.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANCloseInterface.vi"/>
-				<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
 				<Item Name="CANStop.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStop.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Clock Calculation Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Clock Calculation Parameters.ctl"/>
@@ -413,9 +415,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Pot.Voltage to Angle_subVI.vi" Type="VI" URL="../../Kicker VIs/Pot.Voltage to Angle_subVI.vi"/>
-			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="Solenoid Control Sub_VI.vi" Type="VI" URL="../../Kicker VIs/Solenoid Control Sub_VI.vi"/>
 			<Item Name="Theta Drive_Two step on.vi" Type="VI" URL="../../Kicker VIs/Theta Drive_Two step on.vi"/>
 			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>

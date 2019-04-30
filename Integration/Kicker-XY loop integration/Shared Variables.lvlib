@@ -35,4 +35,12 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"-3!!!!"=!A!!!!!!#!""!-0````]'5X2S;7ZH!!!A1%!!!P``````````!!!0-E1A5X2S;7ZH)%&amp;S=G&amp;Z!!%!!1!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
+	<Item Name="XY Telemetry" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Network</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="type" Type="Str">Network</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$R\1!!!"=!A!!!!!!)!".!#A!-2'FT='RB9W6N:7ZU!!!01!I!#&amp;.Q:76E)&amp;.1!!!01!I!#&amp;.Q:76E)&amp;"7!!!41!I!$%&amp;D9W6M:8*B&gt;'FP&lt;A!!&amp;E"1!!1!!!!"!!)!!Q:9)%&amp;Y;8-!!":!5!!%!!!!!1!#!!-'73""?'FT!!!31#%-7&amp;EA1W^N='RF&gt;'5`!!!;1&amp;!!!Q!%!!5!"AR973"5:7RF&lt;76U=HE!!!%!"Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
 </Library>
