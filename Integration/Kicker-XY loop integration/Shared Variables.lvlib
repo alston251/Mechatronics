@@ -15,6 +15,18 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!`/Q!!!"=!A!!!!!!#!!V!#A!(4H6N:8*J9Q!71%!!!P``````````!!!&amp;18*S98E!!1!"!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
+	<Item Name="PC To Rio" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Network</Property>
+		<Property Name="Network:BuffSize" Type="Str">50</Property>
+		<Property Name="Network:ElemSize" Type="Str">1</Property>
+		<Property Name="Network:PointsPerWaveform" Type="Str">1</Property>
+		<Property Name="Network:SingleWriter" Type="Str">False</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">True</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="type" Type="Str">Network</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#'AA!!!"=!A!!!!!!&amp;!!V!#A!(7#"$&lt;W^S:!!.1!I!"VEA1W^P=G1!$5!+!!:&amp;&lt;G6S:XE!!"&amp;!#A!,6'BF&gt;'%A17ZH&lt;'5!'E"1!!1!!!!"!!)!!QN11S"U&lt;S".?6*J&lt;Q!"!!1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
 	<Item Name="XY Datalog" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
 		<Property Name="Network:UseBinding" Type="Str">False</Property>
