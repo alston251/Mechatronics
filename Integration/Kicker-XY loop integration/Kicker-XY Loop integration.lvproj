@@ -8,6 +8,7 @@
 	<Property Name="varPersistentID:{1693B8DD-0E39-4443-8ABF-0E32ADFF6FEF}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/PC To Rio</Property>
 	<Property Name="varPersistentID:{1E4E25A3-F3C1-446C-94DF-6ADF9F0C530E}" Type="Ref">/My Computer/HomeCoords.lvlib/HomeYPixel</Property>
 	<Property Name="varPersistentID:{1F82104C-A21E-440A-81AA-F78BD503A728}" Type="Ref">/My Computer/CameraSettings.lvlib/Brightness</Property>
+	<Property Name="varPersistentID:{2727490B-0908-4146-A9BD-9A0992A5C9F0}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/Rio Flow Cluster</Property>
 	<Property Name="varPersistentID:{2DD33C13-02DA-43C0-9713-9827405D7859}" Type="Ref">/My Computer/CameraSettings.lvlib/Threshold</Property>
 	<Property Name="varPersistentID:{A6006497-756E-4460-BF9E-B787C75DC295}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/XY Telemetry</Property>
 	<Property Name="varPersistentID:{ED11FAAE-065F-4692-9B94-279A619B96B6}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/XY Datalog</Property>
@@ -58,6 +59,7 @@
 		<Item Name="LinearFilter.vi" Type="VI" URL="../../../Machine Vision/Calibration/LinearFilter.vi"/>
 		<Item Name="PC Rio Data passing test.vi" Type="VI" URL="../../Kicker-XY linear integration/PC Rio Data passing test.vi"/>
 		<Item Name="Save Encoder Data From MyRio_sub_VI.vi" Type="VI" URL="../Save Encoder Data From MyRio_sub_VI.vi"/>
+		<Item Name="Telemetry Plotting test code.vi" Type="VI" URL="../../../X-Y Manipulator/Test Code Snippets/Telemetry Plotting test code.vi"/>
 		<Item Name="Thresholding.vi" Type="VI" URL="../../../Machine Vision/Calibration/Thresholding.vi"/>
 		<Item Name="Trajectory.vi" Type="VI" URL="../../../Machine Vision/Calibration/Trajectory.vi"/>
 		<Item Name="TrajectoryTest.vi" Type="VI" URL="../../../Machine Vision/Calibration/TrajectoryTest.vi"/>
@@ -140,6 +142,7 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Flow Control Enum.ctl" Type="VI" URL="../Flow Control Enum.ctl"/>
 			<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 			<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../Motion Plot sub_VI.vi"/>
 			<Item Name="Motion Type Def.ctl" Type="VI" URL="../Motion Type Def.ctl"/>
@@ -249,6 +252,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 		<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../Motion Plot sub_VI.vi"/>
 		<Item Name="Motor Status Enum.ctl" Type="VI" URL="../Motor Status Enum.ctl"/>
+		<Item Name="myRio Flow Control cluster.ctl" Type="VI" URL="../myRio Flow Control cluster.ctl"/>
 		<Item Name="PC Rio Data recieving test.vi" Type="VI" URL="../../Kicker-XY linear integration/PC Rio Data recieving test.vi"/>
 		<Item Name="PC To Rio Cluster.ctl" Type="VI" URL="../PC To Rio Cluster.ctl"/>
 		<Item Name="PID Test.vi" Type="VI" URL="../PID Test.vi"/>
@@ -277,7 +281,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Calculate TOP (Phase Correct Mode).vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate TOP (Phase Correct Mode).vi"/>
 				<Item Name="Callback VI Ref.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/typedefs/Callback VI Ref.ctl"/>
 				<Item Name="CANCloseInterface.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANCloseInterface.vi"/>
-				<Item Name="CANStatusToError.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStatusToError.vi"/>
 				<Item Name="CANStop.vi" Type="VI" URL="/&lt;vilib&gt;/RioEmbeddedCAN/RioEmbeddedCAN.llb/CANStop.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Clock Calculation Parameters.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Clock Calculation Parameters.ctl"/>
@@ -415,9 +418,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Pot.Voltage to Angle_subVI.vi" Type="VI" URL="../../Kicker VIs/Pot.Voltage to Angle_subVI.vi"/>
-			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="Solenoid Control Sub_VI.vi" Type="VI" URL="../../Kicker VIs/Solenoid Control Sub_VI.vi"/>
 			<Item Name="Theta Drive_Two step on.vi" Type="VI" URL="../../Kicker VIs/Theta Drive_Two step on.vi"/>
 			<Item Name="Write_file_sub_VI.vi" Type="VI" URL="../Write_file_sub_VI.vi"/>

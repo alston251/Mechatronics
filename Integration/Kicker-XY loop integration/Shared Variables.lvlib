@@ -27,6 +27,16 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#'AA!!!"=!A!!!!!!&amp;!!V!#A!(7#"$&lt;W^S:!!.1!I!"VEA1W^P=G1!$5!+!!:&amp;&lt;G6S:XE!!"&amp;!#A!,6'BF&gt;'%A17ZH&lt;'5!'E"1!!1!!!!"!!)!!QN11S"U&lt;S".?6*J&lt;Q!"!!1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
+	<Item Name="Rio Flow Cluster" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Network</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">1</Property>
+		<Property Name="type" Type="Str">Network</Property>
+		<Property Name="typedefName1" Type="Str">Flow Control Enum.ctl</Property>
+		<Property Name="typedefPath1" Type="PathRel">../Flow Control Enum.ctl</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#_OA!!!"=!A!!!!!!&amp;!!R!)1&gt;,;7.L:71`!!J!)164&gt;'^Q0Q"H!0%!!!!!!!!!!26'&lt;'^X)%.P&lt;H2S&lt;WQA27ZV&lt;3ZD&gt;'Q!35!7!!9+68"E982F)%EP4Q:,;7.L:8))7&amp;EA2(*J&gt;G5+6'BF&gt;'%A18BJ=QB4&lt;WRF&lt;G^J:!&gt;(&lt;S")&lt;WVF!!!&amp;5X2B&gt;'5!$%!B"U&amp;U)%BP&lt;75!(%"1!!1!!!!"!!)!!QR'&lt;'^X)%.P&lt;H2S&lt;WQ!!!%!"!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
 	<Item Name="XY Datalog" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
 		<Property Name="Network:UseBinding" Type="Str">False</Property>
