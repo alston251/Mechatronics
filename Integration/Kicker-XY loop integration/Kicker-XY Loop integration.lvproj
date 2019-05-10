@@ -12,6 +12,7 @@
 	<Property Name="varPersistentID:{2DD33C13-02DA-43C0-9713-9827405D7859}" Type="Ref">/My Computer/CameraSettings.lvlib/Threshold</Property>
 	<Property Name="varPersistentID:{A6006497-756E-4460-BF9E-B787C75DC295}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/XY Telemetry</Property>
 	<Property Name="varPersistentID:{ED11FAAE-065F-4692-9B94-279A619B96B6}" Type="Ref">/NI-myRIO-1900-03050ae4/Shared Variables.lvlib/XY Datalog</Property>
+	<Property Name="varPersistentID:{F01B42C6-2D7A-49C7-BC87-493B2A83FE3B}" Type="Ref">/My Computer/HomeCoords.lvlib/PixelmmRatio</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -248,6 +249,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Flow Control Enum.ctl" Type="VI" URL="../Flow Control Enum.ctl"/>
 		<Item Name="Go Home State type def.ctl" Type="VI" URL="../Go Home State type def.ctl"/>
 		<Item Name="Go Home Sub_VI.vi" Type="VI" URL="../Go Home Sub_VI.vi"/>
+		<Item Name="Kicker Angle Check.vi" Type="VI" URL="../Kicker Angle Check.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 		<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../Motion Plot sub_VI.vi"/>
