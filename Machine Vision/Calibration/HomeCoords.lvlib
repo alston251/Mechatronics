@@ -7,6 +7,7 @@
 		<Property Name="Description:Description" Type="Str">This is the X pixel co-ordinate for the reference piece and used as the Home X co-ordinate</Property>
 		<Property Name="featurePacks" Type="Str">Description,Global</Property>
 		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:BuffSize" Type="Str">50</Property>
 		<Property Name="Network:UseBinding" Type="Str">False</Property>
 		<Property Name="Network:UseBuffering" Type="Str">False</Property>
 		<Property Name="numTypedefs" Type="UInt">0</Property>

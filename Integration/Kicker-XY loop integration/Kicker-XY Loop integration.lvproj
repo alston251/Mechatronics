@@ -34,12 +34,12 @@
 		<Item Name="AcquireImage.vi" Type="VI" URL="../../../Machine Vision/Calibration/AcquireImage.vi"/>
 		<Item Name="AdjustCameraSettings.vi" Type="VI" URL="../../../Machine Vision/Calibration/AdjustCameraSettings.vi"/>
 		<Item Name="ApplyScaleData.vi" Type="VI" URL="../../../Machine Vision/Calibration/ApplyScaleData.vi"/>
+		<Item Name="AutoAdjustCamera.vi" Type="VI" URL="../../../Machine Vision/Calibration/AutoAdjustCamera.vi"/>
 		<Item Name="Calculate Velocity and Acceleration.vi" Type="VI" URL="../Calculate Velocity and Acceleration.vi"/>
 		<Item Name="CalculatePixeltomm.vi" Type="VI" URL="../../../Machine Vision/Calibration/CalculatePixeltomm.vi"/>
 		<Item Name="Calibrate.vi" Type="VI" URL="../../../Machine Vision/Calibration/Calibrate.vi"/>
 		<Item Name="Calibration_Main.vi" Type="VI" URL="../../../Machine Vision/Calibration/Calibration_Main.vi"/>
 		<Item Name="CameraSettings.lvlib" Type="Library" URL="../../../Machine Vision/Calibration/CameraSettings.lvlib"/>
-		<Item Name="CameraSettingsCheck.vi" Type="VI" URL="../../../Machine Vision/Calibration/CameraSettingsCheck.vi"/>
 		<Item Name="CheckImageQuality.vi" Type="VI" URL="../../../Machine Vision/Calibration/CheckImageQuality.vi"/>
 		<Item Name="CheckReferenceValue.vi" Type="VI" URL="../../../Machine Vision/Calibration/CheckReferenceValue.vi"/>
 		<Item Name="CheckShotSuccess.vi" Type="VI" URL="../../../Machine Vision/Calibration/CheckShotSuccess.vi"/>
