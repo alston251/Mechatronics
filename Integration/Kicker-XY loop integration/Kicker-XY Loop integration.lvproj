@@ -148,6 +148,7 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Energy to Pull-back_linear_subVI.vi" Type="VI" URL="../../Kicker VIs/Energy to Pull-back_linear_subVI.vi"/>
 			<Item Name="Flow Control Enum.ctl" Type="VI" URL="../Flow Control Enum.ctl"/>
 			<Item Name="Motion Path Planing Sub_VI.vi" Type="VI" URL="../Motion Path Planing Sub_VI.vi"/>
 			<Item Name="Motion Plot sub_VI.vi" Type="VI" URL="../Motion Plot sub_VI.vi"/>
